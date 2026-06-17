@@ -1,1 +1,9 @@
-print ("Employee Directory - Pull Request Demo")
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Employee Access Request Portal is running"
+
+if __name__ == '__main__':
+    app.run(debug=True)
